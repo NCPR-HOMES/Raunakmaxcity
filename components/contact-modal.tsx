@@ -44,9 +44,38 @@ export default function ContactModal() {
 
     setIsSubmitting(true)
 
+    // Get formatted timestamp components
+    const now = new Date()
+    const date = now.getDate()
+    const month = now.toLocaleString('en-US', { month: 'long' })
+    const year = now.getFullYear()
+    const time = now.toLocaleString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })
+
+    // Prepare form data for Google Sheets
+    const formPayload = new FormData()
+    formPayload.append("name", name)
+    formPayload.append("email", email)
+    formPayload.append("phone", phone)
+    formPayload.append("date", date.toString())
+    formPayload.append("month", month)
+    formPayload.append("year", year.toString())
+    formPayload.append("time", time)
+
     try {
-      // In a real application, you would send this data to your backend
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      // Submit to Google Sheets
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzaC1WaIy9bPVwDjT8049b70_64xUrSAB_8-0K1-WgFL224eu4Awm18nxZH3FL2Ao2FbA/exec', {
+        method: 'POST',
+        body: formPayload,
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to submit to Google Sheets')
+      }
+
+      // Send to WhatsApp
+      const whatsappMessage = `Hello, my name is ${name}.\nPhone: ${phone}\nEmail: ${email}`
+      const phoneNumber = '918452962301'
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
 
       toast({
         title: "Success!",

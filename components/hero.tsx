@@ -64,7 +64,7 @@ export default function Hero() {
       </div>
 
       {/* Slideshow Controls */}
-      <div className="absolute inset-x-0 top-1/2 z-10 flex justify-between px-4 md:px-10">
+      <div className="absolute inset-x-0 top-1/2 z-20 flex justify-between px-4 md:px-10">
         <Button
           variant="ghost"
           size="icon"
@@ -84,7 +84,7 @@ export default function Hero() {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 space-x-2">
+      <div className="absolute bottom-10 left-1/2 z-20 flex -translate-x-1/2 space-x-2">
         {heroImages.map((_, index) => (
           <button
             key={index}
@@ -119,7 +119,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full text-lg px-8 py-6 text-white border-white hover:bg-white/10"
+              className="rounded-full text-lg px-8 py-6 text-black border-white hover:bg-white/10"
               onClick={() => document.getElementById("floor-plans")?.scrollIntoView({ behavior: "smooth" })}
             >
               View Floor Plans

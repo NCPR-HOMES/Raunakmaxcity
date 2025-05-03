@@ -104,7 +104,7 @@ export default function ContactForm() {
                 <Mail className="h-5 w-5 mt-1" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="opacity-90">mcp.23realestate@gmail.com</p>
+                  <p className="opacity-90">ncpr.23realestate@gmail.com</p>
                 </div>
               </div>
 
