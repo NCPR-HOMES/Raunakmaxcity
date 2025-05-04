@@ -45,7 +45,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-3 w-3" />
-              <a href="mailto:ncpr.homes@gmail.com">ncpr.homes@gmail.com</a>
+              <a href="mailto:contact@ncprhomes.com">contact@ncprhomes.com</a>
             </div>
           </div>
           <div className="flex items-center gap-4 mt-2 md:mt-0">

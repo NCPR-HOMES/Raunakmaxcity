@@ -22,7 +22,7 @@ export default function CallToAction() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience Luxury Living?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Contact us today to schedule a site visit or to learn more about Raunak Max City
+            Contact us today to schedule a site visit or to learn more about Raunak Maximum City
           </p>
           <Button
             onClick={openModal}

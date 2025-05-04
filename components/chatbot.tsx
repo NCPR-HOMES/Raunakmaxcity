@@ -60,8 +60,8 @@ export default function Chatbot() {
     {
       text: "Download brochure",
       action: () => {
-        handleBotResponse("You can download our brochure here:")
-        window.open("/brochure.pdf", "_blank")
+        handleBotResponse("Fill out the form to download the brochure:")
+        openModal
       },
     },
     {
