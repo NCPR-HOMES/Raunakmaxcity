@@ -19,7 +19,7 @@ export default function Location() {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
-    <section id="location" className="section-padding bg-muted/30 clip-path-slant-reverse">
+    <section id="location" className="section-padding bg-muted/30 ">
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="inline-block text-sm font-medium text-primary mb-2">Strategic Location</span>

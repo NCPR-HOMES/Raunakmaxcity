@@ -46,7 +46,7 @@ export default function Gallery() {
   }
 
   return (
-    <section id="gallery" className="section-padding bg-muted/30 clip-path-slant">
+    <section id="gallery" className="section-padding bg-muted/30">
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="inline-block text-sm font-medium text-primary mb-2">Visual Tour</span>

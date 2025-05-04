@@ -21,16 +21,9 @@ export default function ContactModal() {
 
   const { isOpen, openModal, closeModal } = useContactModal()
 
-  // Check if form was previously submitted and not expired
+  // Check if form was previously submitted
   const hasSubmittedForm = () => {
-    const submission = localStorage.getItem('contactFormSubmitted')
-    if (!submission) return false
-
-    const { timestamp } = JSON.parse(submission)
-    const now = new Date().getTime()
-    const oneDayInMs = 24 * 60 * 60 * 1000
-    
-    return now - timestamp < oneDayInMs
+    return localStorage.getItem('contactFormSubmitted') === 'true'
   }
 
   // Modified auto-trigger with submission check
@@ -91,11 +84,8 @@ export default function ContactModal() {
       const phoneNumber = '918452962301'
       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
 
-      // Set flag in localStorage after successful submission with timestamp
-      localStorage.setItem('contactFormSubmitted', JSON.stringify({
-        submitted: true,
-        timestamp: new Date().getTime()
-      }))
+      // Set flag in localStorage after successful submission
+      localStorage.setItem('contactFormSubmitted', 'true')
 
       toast({
         title: "Success!",
@@ -147,7 +137,6 @@ export default function ContactModal() {
             <div className="text-center mb-6">
               <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
               <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
-              <h4 className="text-xl mb-3">Raunak Maximum City</h4>
               <p className="text-muted-foreground">Fill out the form below and our team will get back to you shortly</p>
             </div>
 
