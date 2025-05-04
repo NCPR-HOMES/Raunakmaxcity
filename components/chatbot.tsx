@@ -61,7 +61,7 @@ export default function Chatbot() {
       text: "Download brochure",
       action: () => {
         handleBotResponse("Fill out the form to download the brochure:")
-        openModal
+        openModal()
       },
     },
     {
