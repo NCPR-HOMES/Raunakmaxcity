@@ -13,8 +13,8 @@ const floorPlans = {
     title: "1 BHK",
     area: "430 sqft.",
     price: "Rs 55.99 Lacs*",
-    image: "/placeholder.svg?height=600&width=800",
-    features: [
+    image: "/floorplan1.jpg?height=600&width=800",
+    features: [ 
       "Spacious living room with balcony",
       "Modern kitchen with premium fittings",
       "Well-ventilated bedroom",
@@ -25,7 +25,7 @@ const floorPlans = {
     title: "2 BHK",
     area: "610 - 630 sqft.",
     price: "Rs 83.99 Lacs* onwards",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/floorplan2.jpg?height=600&width=800",
     features: [
       "Master bedroom with attached bathroom",
       "Secondary bedroom with large windows",
@@ -37,7 +37,7 @@ const floorPlans = {
     title: "3 BHK (1+1 Jodi)",
     area: "860 sqft.",
     price: "Rs 1.21 Cr*",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/floorplan3.jpg?height=600&width=800",
     features: [
       "Master bedroom with premium fittings",
       "Two additional well-designed bedrooms",
@@ -91,7 +91,7 @@ export default function FloorPlans() {
                       src={plan.image || "/placeholder.svg"}
                       alt={`${plan.title} Floor Plan`}
                       fill
-                      className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                      className="object-contain p-4 transition-transform duration-500 group-hover:scale-105 blur-[2px]"
                     />
                   </div>
                   <div className="space-y-6">
@@ -117,7 +117,7 @@ export default function FloorPlans() {
                       <Button onClick={openModal} className="rounded-full">
                         Get Quote
                       </Button>
-                      <Button variant="outline" className="rounded-full gap-2">
+                      <Button variant="outline" onClick={openModal} className="rounded-full gap-2">
                         <Download className="h-4 w-4" />
                         Download Floor Plan
                       </Button>

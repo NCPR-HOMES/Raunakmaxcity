@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="font-bold text-xl">
-              <span className="text-gradient">Raunak</span> Max City
+              <span className="text-gradient">Raunak</span> Maximum City
             </h3>
             <p className="text-muted-foreground text-sm">
               Luxury living redefined in Thane West. Experience the perfect blend of comfort, convenience, and elegance.
@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm text-muted-foreground">ncpr.23realestate@gmail.com</span>
+                <span className="text-sm text-muted-foreground">ncpr.homes@gmail.com</span>
               </li>
             </ul>
           </div>

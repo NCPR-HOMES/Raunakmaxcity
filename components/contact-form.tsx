@@ -86,8 +86,10 @@ export default function ContactForm() {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
+
+            
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold mb-4">Get in Touch - Raunak Maximum City</h3>
               <p className="opacity-90 mb-6">Fill out the form and our team will get back to you within 24 hours.</p>
             </div>
 

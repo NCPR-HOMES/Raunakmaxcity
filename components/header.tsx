@@ -45,7 +45,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-3 w-3" />
-              <a href="mailto:ncpr.23realestate@gmail.com">ncpr.23realestate@gmail.com</a>
+              <a href="mailto:ncpr.homes@gmail.com">ncpr.homes@gmail.com</a>
             </div>
           </div>
           <div className="flex items-center gap-4 mt-2 md:mt-0">
@@ -111,8 +111,8 @@ export default function Header() {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <Link href="/" className="font-bold text-xl md:text-2xl">
-              <span className="text-gradient">Raunak</span> Max City
+            <Link href="/" className="font-bold text-lg md:text-2xl">
+              <span className="text-gradient">Raunak</span> Maximum City
             </Link>
 
             {/* Desktop Navigation */}

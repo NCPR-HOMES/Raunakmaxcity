@@ -36,7 +36,7 @@ export default function AboutBuilder() {
             className="relative aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-custom"
           >
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/raunak.png?height=600&width=600"
               alt="Raunak Group Logo and Office"
               fill
               className="object-cover"

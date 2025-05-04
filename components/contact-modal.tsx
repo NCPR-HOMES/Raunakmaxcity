@@ -21,13 +21,27 @@ export default function ContactModal() {
 
   const { isOpen, openModal, closeModal } = useContactModal()
 
-  // Auto-trigger the contact form after 25 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      openModal()
-    }, 25000) // 25 seconds
+  // Check if form was previously submitted and not expired
+  const hasSubmittedForm = () => {
+    const submission = localStorage.getItem('contactFormSubmitted')
+    if (!submission) return false
 
-    return () => clearTimeout(timer)
+    const { timestamp } = JSON.parse(submission)
+    const now = new Date().getTime()
+    const oneDayInMs = 24 * 60 * 60 * 1000
+    
+    return now - timestamp < oneDayInMs
+  }
+
+  // Modified auto-trigger with submission check
+  useEffect(() => {
+    if (!hasSubmittedForm()) {
+      const timer = setTimeout(() => {
+        openModal()
+      }, 15000) // 15 seconds
+
+      return () => clearTimeout(timer)
+    }
   }, [openModal])
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -76,6 +90,12 @@ export default function ContactModal() {
       const whatsappMessage = `Hello, my name is ${name}.\nPhone: ${phone}\nEmail: ${email}`
       const phoneNumber = '918452962301'
       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
+
+      // Set flag in localStorage after successful submission with timestamp
+      localStorage.setItem('contactFormSubmitted', JSON.stringify({
+        submitted: true,
+        timestamp: new Date().getTime()
+      }))
 
       toast({
         title: "Success!",
@@ -127,6 +147,7 @@ export default function ContactModal() {
             <div className="text-center mb-6">
               <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
               <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+              <h4 className="text-xl mb-3">Raunak Maximum City</h4>
               <p className="text-muted-foreground">Fill out the form below and our team will get back to you shortly</p>
             </div>
 

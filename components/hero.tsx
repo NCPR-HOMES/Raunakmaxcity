@@ -9,15 +9,19 @@ import { useContactModal } from "@/hooks/use-contact-modal"
 
 const heroImages = [
   {
-    src: "/placeholder.svg?height=1080&width=1920",
+    src: "/hero3.jpg?height=1080&width=1920 ",
     alt: "Raunak Max City Exterior",
   },
   {
-    src: "/placeholder.svg?height=1080&width=1920",
+    src: "/hero4.jpg?height=1080&width=1920",
     alt: "Raunak Max City Amenities",
   },
   {
-    src: "/placeholder.svg?height=1080&width=1920",
+    src: "/hero2.jpg?height=1080&width=1920",
+    alt: "Raunak Max City Interior",
+  },
+  {
+    src: "/hero5.jpg?height=1080&width=1920",
     alt: "Raunak Max City Interior",
   },
 ]
