@@ -23,11 +23,6 @@ export default function ThankYou() {
         <Button asChild size="lg" className="rounded-full px-8">
           <Link href="/">Return to Home</Link>
         </Button>
-        <Button asChild size="lg" variant="outline" className="rounded-full px-8">
-          <Link href="/brochure.pdf" target="_blank">
-            Download Brochure
-          </Link>
-        </Button>
       </div>
     </div>
   )

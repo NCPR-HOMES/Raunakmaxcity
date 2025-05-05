@@ -22,16 +22,52 @@ const navLinks = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState("")
   const { openModal } = useContactModal()
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
+
+      // Set home active when at the top
+      if (window.scrollY < 100) {
+        setActiveSection("/")
+        return
+      }
+
+      // Find active section
+      const sections = navLinks
+        .map((link) => link.href.replace("#", ""))
+        .filter((href) => href !== "/")
+      
+      for (const section of sections.reverse()) {
+        const element = document.getElementById(section)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= 100) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
     }
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Update the Link components in both desktop and mobile navigation
+  const getLinkStyles = (href: string) => {
+    const section = href.replace("#", "")
+    return cn(
+      "transition-colors",
+      href === "/" 
+        ? "text-sm font-medium hover:text-primary" 
+        : activeSection === section
+        ? "text-sm font-medium text-primary"
+        : "text-sm font-medium hover:text-primary"
+    )
+  }
 
   return (
     <>
@@ -121,7 +157,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium hover:text-primary transition-colors"
+                  className={getLinkStyles(link.href)}
                 >
                   {link.name}
                 </Link>
@@ -161,7 +197,10 @@ export default function Header() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="text-lg font-medium py-2 hover:text-primary transition-colors"
+                      className={cn(
+                        getLinkStyles(link.href),
+                        "text-lg py-2"
+                      )}
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

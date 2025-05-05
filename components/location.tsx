@@ -2,21 +2,25 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { MapPin, School, ShoppingBag, Train, Car, Building, Hospital } from "lucide-react"
+import { MapPin, School, ShoppingBag, Train, Car, Building, Hospital, FerrisWheel, TrainFront } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useContactModal } from "@/hooks/use-contact-modal"
 
 const nearbyPlaces = [
-  { name: "Thane Railway Station", distance: "3.5 km", icon: Train },
-  { name: "Viviana Mall", distance: "2.8 km", icon: ShoppingBag },
-  { name: "Hiranandani School", distance: "2.2 km", icon: School },
-  { name: "Jupiter Hospital", distance: "4.1 km", icon: Hospital },
-  { name: "Hiranandani Business Park", distance: "3.0 km", icon: Building },
-  { name: "Mumbai Airport", distance: "28 km", icon: Car },
+  { name: "Thane Railway Station", distance: "25 mins", icon: Train },
+  { name: "Metro Station", distance: "5 mins", icon: TrainFront },
+  { name: "Viviana Mall", distance: "15 mins", icon: ShoppingBag },
+  { name: "Euro School", distance: "4 min", icon: School },
+  { name: "Jupiter Hospital", distance: "15 mins", icon: Hospital },
+  { name: "Tieten Medicity", distance: "6 mins", icon: Building },
+  { name: "Upvan Lake", distance: "15 mins", icon: Car },
+  { name: "Suraj Water Park", distance: "7 mins", icon: FerrisWheel },
 ]
 
 export default function Location() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const { openModal } = useContactModal()
 
   return (
     <section id="location" className="section-padding bg-muted/30 ">
@@ -70,7 +74,7 @@ export default function Location() {
               </ul>
             </div>
 
-            <Button className="rounded-full">Get Directions</Button>
+            <Button className="rounded-full" onClick={openModal}>Get Directions</Button>
           </motion.div>
 
           <motion.div

@@ -81,7 +81,7 @@ export default function Amenities() {
             className="relative aspect-video rounded-2xl overflow-hidden shadow-custom"
           >
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="/lm.jpg?height=600&width=800"
               alt="Raunak Max City Amenities"
               fill
               className="object-cover"

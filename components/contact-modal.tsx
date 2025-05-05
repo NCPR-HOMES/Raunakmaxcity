@@ -80,7 +80,7 @@ export default function ContactModal() {
       }
 
       // Send to WhatsApp
-      const whatsappMessage = `Hello, my name is ${name}.\nPhone: ${phone}\nEmail: ${email}`
+      const whatsappMessage = `Hello, my name is ${name}.\nPhone: ${phone}\nEmail: ${email} \nI want to know more about Raunak Maximum City Fully Furnished Flat And Special Scheme Offer`
       const phoneNumber = '918452962301'
       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
 

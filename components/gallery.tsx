@@ -22,9 +22,9 @@ const galleryImages = {
   ],
   amenities: [
     { src: "/swimmingpool.jpg?height=600&width=800", alt: "Swimming Pool" },
-    { src: "/placeholder.svg?height=600&width=800", alt: "Gym" },
+    { src: "/gym.png?height=600&width=800", alt: "Gym" },
     { src: "/ex3.jpg?height=600&width=800", alt: "Garden" },
-    { src: "/placeholder.svg?height=600&width=800", alt: "Clubhouse" },
+    { src: "/clubhouse.jpg?height=600&width=800", alt: "Clubhouse" },
   ],
 }
 
