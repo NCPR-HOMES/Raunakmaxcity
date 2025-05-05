@@ -23,7 +23,7 @@ export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "👋 Hi there! I'm your Raunak Max City assistant. How can I help you today?",
+      text: "👋 Hi there! I'm your Raunak Maximum City assistant. How can I help you today?",
       isBot: true,
     },
   ])
@@ -113,7 +113,7 @@ export default function Chatbot() {
             className="bg-card rounded-2xl shadow-lg border mb-4 w-[320px] sm:w-[350px] max-h-[500px] flex flex-col overflow-hidden"
           >
             <div className="p-4 gradient-primary text-white rounded-t-2xl flex justify-between items-center">
-              <h3 className="font-semibold">Raunak Max City Assistant</h3>
+              <h3 className="font-semibold">Raunak Maximum City Assistant</h3>
               <Button
                 variant="ghost"
                 size="icon"

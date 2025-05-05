@@ -10,19 +10,19 @@ import { useContactModal } from "@/hooks/use-contact-modal"
 const heroImages = [
   {
     src: "/hero3.jpg?height=1080&width=1920 ",
-    alt: "Raunak Max City Exterior",
+    alt: "Raunak Maximum City Exterior",
   },
   {
     src: "/hero4.jpg?height=1080&width=1920",
-    alt: "Raunak Max City Amenities",
+    alt: "Raunak Maximum City Amenities",
   },
   {
     src: "/hero2.jpg?height=1080&width=1920",
-    alt: "Raunak Max City Interior",
+    alt: "Raunak Maximum City Interior",
   },
   {
     src: "/hero5.jpg?height=1080&width=1920",
-    alt: "Raunak Max City Interior",
+    alt: "Raunak Maximum City Interior",
   },
 ]
 
@@ -108,7 +108,7 @@ export default function Hero() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-            Raunak Max City
+            Raunak Maximum City
             <span className="block text-xl md:text-2xl font-normal mt-2">Thane's No. 1 Property</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Premium 1, 2 & 2.5 BHK Apartments in Thane West</p>

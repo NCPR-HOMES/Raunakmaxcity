@@ -11,9 +11,9 @@ import Rera from "@/components/rera"
 import CallToAction from "@/components/call-to-action"
 
 export const metadata: Metadata = {
-  title: "Raunak Max City | Premium Residential Project in Thane West",
+  title: "Raunak Maximum City | Premium Residential Project in Thane West",
   description:
-    "Discover Raunak Max City - Thane's No. 1 Property offering 1, 2 & 2.5 BHK luxury apartments with world-class amenities and strategic location in Thane West.",
+    "Discover Raunak Maximum City - Thane's No. 1 Property offering 1, 2 & 2.5 BHK luxury apartments with world-class amenities and strategic location in Thane West.",
 }
 
 export default function Home() {

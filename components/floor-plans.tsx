@@ -12,7 +12,7 @@ const floorPlans = {
   "1bhk": {
     title: "1 BHK",
     area: "430 sqft.",
-    price: "Rs 55.99 Lacs*",
+    price: "Rs 64.99 Lacs*",
     image: "/floorplan1.jpg?height=600&width=800",
     features: [ 
       "Spacious living room with balcony",
@@ -24,7 +24,7 @@ const floorPlans = {
   "2bhk": {
     title: "2 BHK",
     area: "610 - 630 sqft.",
-    price: "Rs 83.99 Lacs* onwards",
+    price: "Rs 93.99 Lacs* onwards",
     image: "/floorplan2.jpg?height=600&width=800",
     features: [
       "Master bedroom with attached bathroom",
@@ -36,7 +36,7 @@ const floorPlans = {
   "3bhk": {
     title: "2.5 BHK (1+1 Jodi)",
     area: "860 sqft.",
-    price: "Rs 1.21 Cr*",
+    price: "Rs 1.35 Cr*",
     image: "/floorplan3.jpg?height=600&width=800",
     features: [
       "Master bedroom with premium fittings",

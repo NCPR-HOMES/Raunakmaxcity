@@ -49,7 +49,7 @@ export default function Location() {
             </div>
 
             <p className="text-muted-foreground">
-              Raunak Max City is located on the prestigious Ghodbunder Road in Thane West, offering easy access to major
+              Raunak Maximum City is located on the prestigious Ghodbunder Road in Thane West, offering easy access to major
               business districts, educational institutions, healthcare facilities, and entertainment options.
             </p>
 
@@ -92,7 +92,7 @@ export default function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Raunak Max City Location"
+              title="Raunak Maximum City Location"
             ></iframe>
           </motion.div>
         </div>

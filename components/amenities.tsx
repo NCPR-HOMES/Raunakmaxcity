@@ -82,7 +82,7 @@ export default function Amenities() {
           >
             <Image
               src="/lm.jpg?height=600&width=800"
-              alt="Raunak Max City Amenities"
+              alt="Raunak Maximum City Amenities"
               fill
               className="object-cover"
             />

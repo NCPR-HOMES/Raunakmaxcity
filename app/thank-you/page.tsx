@@ -4,8 +4,8 @@ import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Thank You | Raunak Max City",
-  description: "Thank you for your interest in Raunak Max City. Our team will contact you shortly.",
+  title: "Thank You | Raunak Maximum City",
+  description: "Thank you for your interest in Raunak Maximum City. Our team will contact you shortly.",
 }
 
 export default function ThankYou() {
@@ -17,7 +17,7 @@ export default function ThankYou() {
       </div>
       <h1 className="text-4xl font-bold mb-4 mt-4">Thank You!</h1>
       <p className="text-xl mb-8 max-w-md">
-        We've received your inquiry about Raunak Max City. Our team will contact you shortly.
+        We've received your inquiry about Raunak Maximum City. Our team will contact you shortly.
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <Button asChild size="lg" className="rounded-full px-8">

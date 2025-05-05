@@ -52,7 +52,7 @@ export default function Gallery() {
           <span className="inline-block text-sm font-medium text-primary mb-2">Visual Tour</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Project Gallery</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore the stunning visuals of Raunak Max City through our comprehensive gallery
+            Explore the stunning visuals of Raunak Maximum City through our comprehensive gallery
           </p>
         </div>
 

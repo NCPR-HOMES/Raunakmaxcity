@@ -77,7 +77,7 @@ export default function ProjectHighlights() {
           <span className="inline-block text-sm font-medium text-primary mb-2">Why Choose Us</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Project Highlights</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Raunak Max City offers a perfect blend of luxury, comfort, and convenience with these exceptional features
+            Raunak Maximum City offers a perfect blend of luxury, comfort, and convenience with these exceptional features
           </p>
         </div>
 
