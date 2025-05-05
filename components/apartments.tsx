@@ -22,7 +22,7 @@ const apartments = [
     features: ["Master Bedroom", "Kids Bedroom", "Spacious Living Area", "Utility Space"],
   },
   {
-    type: "3 BHK (1+1 Jodi)",
+    type: "2.5 BHK (1+1 Jodi)",
     area: "860 sqft.",
     price: "Rs 1.21 Cr*",
     icon: Castle,

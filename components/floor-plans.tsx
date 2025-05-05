@@ -34,7 +34,7 @@ const floorPlans = {
     ],
   },
   "3bhk": {
-    title: "3 BHK (1+1 Jodi)",
+    title: "2.5 BHK (1+1 Jodi)",
     area: "860 sqft.",
     price: "Rs 1.21 Cr*",
     image: "/floorplan3.jpg?height=600&width=800",
@@ -79,7 +79,7 @@ export default function FloorPlans() {
                 2 BHK
               </TabsTrigger>
               <TabsTrigger value="3bhk" className="rounded-full">
-                3 BHK
+                2.5 BHK
               </TabsTrigger>
             </TabsList>
 

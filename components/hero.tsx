@@ -111,7 +111,7 @@ export default function Hero() {
             Raunak Max City
             <span className="block text-xl md:text-2xl font-normal mt-2">Thane's No. 1 Property</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Premium 1, 2 & 3 BHK Apartments in Thane West</p>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Premium 1, 2 & 2.5 BHK Apartments in Thane West</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               size="lg"

@@ -7,7 +7,7 @@ import { Building2, Trees, Dumbbell, ShieldCheck, Wifi, Car, Droplets, Zap } fro
 const highlights = [
   {
     title: "Premium Apartments",
-    description: "Spacious 1, 2 & 3 BHK apartments with premium finishes",
+    description: "Spacious 1, 2 & 2.5 BHK apartments with premium finishes",
     icon: Building2,
   },
   {
